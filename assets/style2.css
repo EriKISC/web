@@ -1,0 +1,227 @@
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0066cc;
+    color: white;
+}
+
+.menu {
+display: flex;
+width: 50%;
+justify-content: space-around;
+}
+.menu a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: larger;
+    padding: 10px 20px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.brand span {
+color: #00FFFF;
+}
+
+.brand {
+    margin-top: -11px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.menu .activo {
+    color: #00FFFF;
+}
+
+.menu a:hover{
+    background-color: rgb(108, 201, 241);
+    color: #0066cc;
+}
+
+.main {
+margin: 0 auto;
+width: 70vw;
+height: 80vh;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+align-items: center;
+}
+
+h1{
+    color: black;
+    font-style: unset;
+    font-size: xx-large;
+}
+
+.main img {
+    width: 350px;
+    border: 5px solid #99FFFF;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 100vw;
+    align-items: center;
+}
+
+.about img {
+    width: 100%;
+    grid-column: 1/5;
+}
+
+.about-info {
+    grid-column: 5/10;
+    padding: 10em;
+}
+
+.about-info h2 {
+    font-size: 3em;
+    color: #0066cc;
+}
+
+.project-headings {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5em;
+}
+
+.portfolio img{
+    width: 25%;
+    grid-column: 1/5;
+}
+
+#portfolio {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+#portfolio h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#portfolio p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1em;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#contacto {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#contacto h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#contacto p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    margin-right: 10px;
+}
+
+form button[type="reset"] {
+    background-color: #dc3545;
+    color: white;
+}
